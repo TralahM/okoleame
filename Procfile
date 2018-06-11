@@ -1,1 +1,1 @@
-web:waitress-serve onlineshop.wsgi:application
+web:waitress-server onlineshop.wsgi:application
