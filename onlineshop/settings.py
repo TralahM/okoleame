@@ -11,9 +11,11 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT=os.path.dirname(os.path.abspath(__file__))
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'mcskaren2016@gmail.com' #This is going to be used to send emails
@@ -140,19 +142,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+STATIC_ROOT=os.path.join(PROJECT_ROOT,"static")
 STATIC_URL = '/static/'
 
 
 if DEBUG:
     MEDIA_URL = '/media/'
-    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static")
+    STATIC_ROOT = os.path.join(PROJECT_ROOT,"static")
     MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static","media")
     STATICFILES_DIRS =(
-        #os.path.join(os.path.dirname(BASE_DIR),"static","static"),
+        os.path.join(os.path.dirname(BASE_DIR),"static","static"),
         os.path.join(BASE_DIR, 'static'),
     )
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 SITE_ID = 1
 
@@ -193,3 +198,4 @@ STRIPE_SECRET_KEY = 'sk_test_FqmN8OQbuxmJdDFsLYSaTWEp'
 
 #STRIPE_PUBLISHABLE_KEYS = ''
 #STRIPE_SECRET_KEY = ''
+django_heroku.settings(locals())
