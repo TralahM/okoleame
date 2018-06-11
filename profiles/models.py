@@ -20,7 +20,7 @@ class Profile(models.Model):
         return self.name
 
 class userStripe(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL,on_delete='')
     stripe_id = models.CharField(max_length=200, null= True, blank=True)
 
     def __unicode__(self):
