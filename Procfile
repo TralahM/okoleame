@@ -1,1 +1,1 @@
-web:waitress-server onlineshop.wsgi:application
+web:gunicorn onlineshop.wsgi:application
