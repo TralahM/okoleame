@@ -10,7 +10,7 @@ stripe.api_key = settings.STRIPE_SECRET_KEY
 
 class Profile(models.Model):
     name = models.CharField(max_length=120)
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, null=True, blank=True)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, null=True, blank=True,on_delete='')
     description = models.TextField(default='Enter Description')
     '''
     location = models.CharField(max_length=120, default='Nairobi,Kenya',blank=True, null=True)
