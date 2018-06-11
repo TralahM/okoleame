@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     #'stripe',
-    'herokuapp',
 ]
 
 MIDDLEWARE = [
