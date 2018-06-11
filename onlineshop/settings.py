@@ -16,8 +16,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'youremail@gmail.com' #This is going to be used to send emails
-EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_HOST_USER = 'mcskaren2016@gmail.com' #This is going to be used to send emails
+EMAIL_HOST_PASSWORD = 'mcskaren2016'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
 
@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'stripe'
+    'stripe',
+    'herokuapp',
 ]
 
 MIDDLEWARE = [
