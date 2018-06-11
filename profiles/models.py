@@ -33,7 +33,7 @@ class userStripe(models.Model):
 def my_callback(sender,request,user, **kwargs):
     idStripe, created = userStripe.objects.get_or_create(user=user)
     if created:
-        print 'created for %s'%(user.username)
+        print (('created for %s'%(user.username))
 
     userProfile, is_created = Profile.objects.get_or_create(user=user)
     if is_created:
