@@ -17,6 +17,7 @@ django-heroku = "*"
 django-allauth="*"
 django-crispy_forms="*"
 gunicorn = "*"
+stripe="*"
 
 
 [dev-packages]
