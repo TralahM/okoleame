@@ -1,7 +1,5 @@
-# E-commerce-Site-Created-Using-Django-1.11.1
-<p align="center"><img src="https://github.com/henrymbuguak/E-commerce-Site-Created-Using-Django-1.11.1/blob/master/static/static/img/djang-eco.png"></p>
-
-
+# okoleame academy   
+####by .. @TralahM, C.T.O 3Point.Dev
 ### Introduction
 
 In this project we are using Django Web Framework to create an E-commerce site and I hope you can be able to replicate the source code in your own project. Here are some of the features that are included in this project:
@@ -25,3 +23,4 @@ We use crispy form to make sure our forms in the project appealing to the user o
 ### Bootstrap Framework
 
 We are using Bootstrap Framework to ensure that our system is fully responsive. Clone the code and have a look at the code.
+
