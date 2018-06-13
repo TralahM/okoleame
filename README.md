@@ -1,5 +1,5 @@
 # okoleame academy   
-####by .. @TralahM, C.T.O 3Point.Dev
+#### by .. @TralahM, C.T.O 3Point.Dev
 ### Introduction
 
 In this project we are using Django Web Framework to create an E-commerce site and I hope you can be able to replicate the source code in your own project. Here are some of the features that are included in this project:
